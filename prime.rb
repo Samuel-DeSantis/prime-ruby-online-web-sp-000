@@ -5,10 +5,10 @@ def prime?(num)
   (2..num-1).all? do |n|
     if n.odd?
       if num % n === 0
-        return false
+        return true
       end
     else
-      return true
+      return false
     end
   end
 end
